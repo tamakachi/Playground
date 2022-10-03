@@ -7,16 +7,25 @@
   
   let currentFirstMultiple = 1
   let secondMultiple = 1
-  while(currentFirstMultiple<=13 && secondMultiple<=13)
+
+  const howManyMultiples = 13
+
+  while(currentFirstMultiple<=howManyMultiples && secondMultiple<=howManyMultiples)
   {
+
+
+
+    console.log(`${currentFirstMultiple} * ${secondMultiple} = ${currentFirstMultiple*secondMultiple}`)
+    secondMultiple++
 
     if(secondMultiple>12){
       currentFirstMultiple++
       secondMultiple = 1
     }
 
-    console.log(`${currentFirstMultiple} * ${secondMultiple} = ${currentFirstMultiple*secondMultiple}`)
-    secondMultiple++
+    if(secondMultiple==1 && currentFirstMultiple<=howManyMultiples){
+      console.log(`${currentFirstMultiple} times table`)
+    }
     
   }
 
