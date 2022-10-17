@@ -2,41 +2,31 @@
 	<script src="https://cdn.tailwindcss.com"></script>
 </svelte:head>
 
-<script>
-  import Counter from './lib/Counter.svelte'
-  
-  let currentFirstMultiple = 1
-  let secondMultiple = 1
+  <script>
 
-  const howManyMultiples = 13
+    let name = 'Kent'
 
-  while(currentFirstMultiple<=howManyMultiples && secondMultiple<=howManyMultiples)
-  {
-
-
-
-    console.log(`${currentFirstMultiple} * ${secondMultiple} = ${currentFirstMultiple*secondMultiple}`)
-    secondMultiple++
-
-    if(secondMultiple>12){
-      currentFirstMultiple++
-      secondMultiple = 1
-    }
-
-    if(secondMultiple==1 && currentFirstMultiple<=howManyMultiples){
-      console.log(`${currentFirstMultiple} times table`)
-    }
-    
-  }
-
+    import Component from "./lib/Component.svelte"
   </script>
 
 <main>
-  <div>
-    
+  <h1>My first Svelte component</h1>
+
+  <p>Hello World</p>
+  <div> 
+    <a href="https://www.youtube.com">Link to my Youtube channel</a>
   </div>
+
+  <Component />
 </main>
 
 <style>
+
+  h1{ 
+    color: rebeccapurple;
+  }
+  p{ 
+    font-size: 4rem;
+    }
 
 </style>
