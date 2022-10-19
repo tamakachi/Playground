@@ -12,10 +12,10 @@
 <main>
   <button on:click={()=>{count--}}>-</button>
   {count} * 2 = {double} 
-  <button on:click={()=>{count++}}>+</button>
+  <button on:click={()=>{count++ ,console.log(double)}}>+</button>
   <button on:click={()=>{count=0}}>Reset</button>
   <form action="">
-  <button on:click|preventDefault={()=>{people.push('Legend'), people = people}}>Push into Array</button>
+    <button on:click|preventDefault={()=>{people.push('Legend'), people = people}}>Push into Array</button>
   </form>
   <p>{people}</p>
 </main>
