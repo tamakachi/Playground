@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     import {createEventDispatcher} from 'svelte'
     export let username = 'user'
     export let age
@@ -18,4 +18,4 @@
 
 <style>
 
-</style>
+</style> -->
