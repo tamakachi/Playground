@@ -1,4 +1,4 @@
-<!-- <script>
+<script>
     import {createEventDispatcher} from 'svelte'
     export let username = 'user'
     export let age
@@ -7,6 +7,10 @@
 
     function greetUser(){
         dispatch('greet', username)
+    }
+
+    export function sayHello(){
+        console.log("Hello")
     }
 
 </script>
@@ -18,4 +22,4 @@
 
 <style>
 
-</style> -->
+</style>
